@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <style>
+  
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+  
+body{
+  margin: 0;
+  padding:0;
+  font-family: 'Quicksand' , sans-serif;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+  
+    .credential{
+    
+    background: linear-gradient(-45deg , #fa7199 , #f5ce62 , #e43603 ,#fa7199);
+    color: white;
+    width: 95%;
+    height: 485px;
+    border: 3px solid #ccc;
+    box-shadow: 0 0 30px #000;
+    border-radius: 20px;
+    animation: movinggradient 3s ease-in infinite;
+    background-size: 1000%;
+}
+
+@keyframes movinggradient{
+  
+  0%{
+    background-position: 0 50%;
+  }
+  
+  50%{
+    background-position: 50% 100%;
+  }
+  
+  0%{
+    background-position: 0 50%;
+  }
+  
+}
+
+
+
+
+ 
+ 
+ u{
+   font-size: 20px;
+ }
+ 
+ h1{
+   font-size: 40px;
+ }
+ 
+ button{
+   width: 150px;
+   height: 40px;
+   border-radius: 10px;
+   border: 2px solid black;
+   font-family: 'Quicksand' , sans-serif;
+ }
+  
+  </style>
+  
+  
+  <title>PROFILE</title>
+</head>
+<body>
+<br><br>
+  <center>
+  <div class="credential">
+   
+   <center>
+   <h1>Your Profile</h1>
+   </center>
+   
+   <hr>
+   <h4 id="user"></h4>
+   <hr>
+   <h4 id="email"></h4>
+   <hr>
+   
+   
+   <center>
+     <a href="index.html">
+      <button>LogIn - SignUp</button>
+     </a>
+     
+     
+     
+     <a href="chat.html">
+       <button>CONTINUE CHAT</button>
+     </a>
+   </center>
+   
+   <hr>
+  
+
+   <h1>
+   <i class="fas fa-lock fa-shake"></i>
+   </h1>
+   
+   Take A Deep Breath
+   <br>
+   You Profile Is Secured By 《MARBLE》
+   <br>
+   Feel Safe 😊😊 😎😎
+   
+  </div>
+  </center>
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var email = localStorage.getItem("email");
+var user = localStorage.getItem("user");
+
+document.getElementById("email").innerHTML =  "<u>"+"Email" + "</u>" +" :  " + email
+
+
+document.getElementById("user").innerHTML =   "<u>" + "Username" + "</u>"  + " : "+ user
+
+</script>
+
+
+
+
+
+</body>
+</html>
